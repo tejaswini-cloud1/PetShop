@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #ff6347;
+            /* Tomato color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .pet-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .pet {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: calc(33% - 40px);
+            /* Adjust for margin */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .pet:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .pet {
+                width: calc(50% - 40px);
+                /* Adjust for margin */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .pet {
+                width: 100%;
+                /* Full width on smaller screens */
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Pet Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pets">Pets</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="pets">
+        <section class="pet-list">
+            <article class="pet">
+                <h2>Dog</h2>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.Tbl2uFeNce50cQ5IrQHcNQHaFj&pid=Api&P=0&h=180" alt="">
+                <p>Breed: Golden Retriever</p>
+                <p>Price: $500</p>
+            </article>
+            <article class="pet">
+                <h2>Cat</h2>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.K452PKyJLzYAqcOejAgHmAHaGB&pid=Api&P=0&h=180" alt="">
+                <p>Breed: Siamese</p>
+                <p>Price: $300</p>
+            </article>
+            <article class="pet">
+                <h2>Parrot</h2>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.tNtDFztHBlqoHmo5gAD9PwHaE6&pid=Api&P=0&h=180" alt="">
+                <p>Breed: African Grey</p>
+                <p>Price: $800</p>
+            </article>
+            <!-- Add more pet entries as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pet Shop. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
